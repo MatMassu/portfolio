@@ -26,7 +26,14 @@ export default function Aprender() {
         <figure
           className={`flex flex-row items-center mt-12 sm:mt-45 gap-10 text-black`}
         >
-          <div className="flex-1 rounded-3xl shadow-md border"></div>
+          <div className="flex flex-1 justify-center">
+            <Image
+              src="/binoculars.svg"
+              alt="Binoculars"
+              height={250}
+              width={250}
+            />
+          </div>
           <div className="flex flex-2 flex-col gap-4">
             <h2 className="text-3xl font-medium">Familiarización</h2>
             <p className="text-2xl">
@@ -49,12 +56,21 @@ export default function Aprender() {
               tips, y casos de uso.{" "}
             </p>
           </div>
-          <div className="flex-1 rounded-3xl shadow-md border"></div>
+          <div className="flex flex-1 justify-center">
+            <Image
+              src="/openbook.svg"
+              alt="Open book"
+              height={250}
+              width={250}
+            />
+          </div>
         </figure>
         <figure
           className={`flex flex-row items-center mt-12 sm:mt-45 gap-10 text-black`}
         >
-          <div className="flex-1 rounded-3xl shadow-md border"></div>
+          <div className="flex flex-1 justify-center">
+            <Image src="/lab.svg" alt="Lab" height={250} width={250} />
+          </div>
           <div className="flex flex-2 flex-col gap-4">
             <h2 className="text-3xl font-medium">Experimentación</h2>
             <p className="text-2xl">
@@ -77,7 +93,14 @@ export default function Aprender() {
               estructurar con mayor facilidad el resto del camino.{" "}
             </p>
           </div>
-          <div className="flex-1 rounded-3xl shadow-md border"></div>
+          <div className="flex flex-1 justify-center">
+            <Image
+              src="/calendar.svg"
+              alt="Calendar"
+              height={200}
+              width={200}
+            />
+          </div>
         </figure>
       </div>
     </section>

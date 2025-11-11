@@ -32,19 +32,22 @@ export default function Home() {
             title="CME Watch"
             desc={CMEDesc}
             bgcolor="bg-white"
-            link="https://nasa-dashboard-gamma.vercel.app/"
+            siteLink="https://nasa-dashboard-gamma.vercel.app/"
+            githubLink="https://github.com/MatMassu/nasa-dashboard"
           />
           <ProyectosItem
             title="E-commerce de Calzado"
             desc={EcommerceDesc}
-            bgcolor=""
-            link="https://zapatos-khaki.vercel.app/"
+            bgcolor="https://github.com/MatMassu/nasa-dashboard"
+            siteLink="https://zapatos-khaki.vercel.app/"
+            githubLink="https://github.com/MatMassu/zapatos"
           />
           <ProyectosItem
             title="Wikitimes"
             desc={WikiDesc}
             bgcolor="bg-white"
-            link="https://wikitimes.vercel.app/"
+            siteLink="https://wikitimes.vercel.app/"
+            githubLink="https://github.com/MatMassu/wikitimes"
           />
         </article>
       )}

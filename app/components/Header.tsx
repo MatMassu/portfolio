@@ -8,8 +8,10 @@ import Image from "next/image";
 export default function Header() {
   const buttonClass =
     "rounded-xl text-center tracking-widest bg-white py-1 w-20 sm:w-50 text-xs sm:text-2xl shadow-md cursor-pointer hover:shadow-lg active:scale-98 active:shadow-xs transform transition-all";
+  const buttonClassPressed =
+    "rounded-xl text-center tracking-widest bg-white py-1 w-20 sm:w-50 text-xs sm:text-2xl shadow-xs cursor-pointer scale-98 action:scale-95 transform transition-all";
   const dropdownAnimationClass =
-    "absolute invisible opacity-0 scale-y-0  group-hover:visible group-hover:opacity-100 group-hover:scale-y-100 transform origin-top transition-all duration-100 ease-out";
+    "absolute invisible opacity-0 scale-y-0 group-hover:visible group-hover:opacity-100 group-hover:scale-y-100 transform origin-top transition-all duration-100 ease-out";
   const paddingDesktop = "sm:px-50 sm:py-30";
   const paddingDesktopMini = "sm:px-50 sm:pb-5 shadow-md bg-transparent";
   const paddingMobile = "p-2 pt-20 pb-10";
@@ -60,7 +62,9 @@ export default function Header() {
         <ul className="flex min-w-full justify-center sm:justify-start gap-x-6 gap-y-5 sm:gap-x-35 sm:gap-y-10 flex-wrap">
           <li className="relative inline-block group">
             <button
-              className={buttonClass}
+              className={clsx(
+                selected != "sobremi" ? buttonClass : buttonClassPressed
+              )}
               onClick={() => setSelected("sobremi")}
             >
               sobre mí
@@ -95,7 +99,9 @@ export default function Header() {
 
           <li>
             <button
-              className={buttonClass}
+              className={clsx(
+                selected != "proyectos" ? buttonClass : buttonClassPressed
+              )}
               onClick={() => setSelected("proyectos")}
             >
               proyectos
