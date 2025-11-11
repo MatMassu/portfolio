@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import { useNav } from "./context/NavContext";
 import Inicio from "./components/Inicio";
 import ProyectosItem from "./components/ProyectosItem";
 import Aprender from "./components/Aprender";
+import UsoIA from "./components/UsoIA";
 
 const CMEDesc =
   "Monitor de actividad solar (CMEs) y su impacto en la tierra utilizando información provista en tiempo real por la NASA. Visualizado en forma de cartas interactivas con información sobre cada evento, codificadas por color según su frecuencia e intensidad. Permite filtrar por tipo de impacto y ordenar la visualización por fecha, velocidad, o intensidad del evento.";
@@ -20,13 +20,14 @@ export default function Home() {
   return (
     <main className="bg-[#FFF0DE] min-w-screen min-h-screen pb-100">
       {selected === "sobremi" && (
-        <article className="flex flex-col mx-10 sm:mx-50 gap-20 sm:gap-40">
+        <article className="flex flex-col mx-10 sm:mx-50 gap-20 sm:gap-40 pt-100">
           <Inicio />
           <Aprender />
+          <UsoIA />
         </article>
       )}
       {selected === "proyectos" && (
-        <article>
+        <article className="pt-100">
           <ProyectosItem
             title="CME Watch"
             desc={CMEDesc}

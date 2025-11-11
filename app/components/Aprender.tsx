@@ -2,25 +2,29 @@ import Image from "next/image";
 
 export default function Aprender() {
   return (
-    <section className="text-black tracking-wide sm:text-2xl bg-white min-h-150 px-5 sm:px-30 py-10 sm:py-30">
-      <h2 className="text-2xl sm:text-5xl text-black tracking-wider text-center">
-        Aprendiendo a Aprender
+    <section
+      id="autodidacta"
+      className="text-black tracking-wide sm:text-2xl bg-white min-h-150 px-5 sm:px-30 py-10 sm:py-30"
+    >
+      <h2 className="text-2xl sm:text-5xl text-black tracking-wider">
+        Guía del Autodidacta
       </h2>
-      <p className="mt-8 mb-2 sm:mt-15 sm:mb-5">
+      <hr className="opacity-10 mt-8"></hr>
+      <p className="sm:mt-8">
         Todo autodidacta tiene una relación estrecha con el sentimiento de
         frustración. Debido a la cantidad de recursos disponibles en internet y
         la creciente variedad de métodos existentes para cumplir una misma
         función, el primer intento de estudiar una nueva herramienta suele
         invocar una abrumación dificil de ignorar.
       </p>
-      <p>
-        Para cumplir con mi intención de aprender por cuenta propia, debí idear
-        un sistema que me permita concentrar la mayor cantidad de esfuerzo en
+      <p className="mt-2 sm:mt-5">
+        Para cumplir con mi intención de aprender por cuenta propia, decidí
+        idear un sistema que me permita concentrar todo el esfuerzo posible en
         adquirir conocimiento de manera eficiente y sin distracciones.
       </p>
       <div>
         <figure
-          className={`flex flex-row items-center mt-12 sm:mt-45 gap-10 text-black tracking-wider`}
+          className={`flex flex-row items-center mt-12 sm:mt-45 gap-10 text-black`}
         >
           <div className="flex-1 rounded-3xl shadow-md border"></div>
           <div className="flex flex-2 flex-col gap-4">
@@ -34,7 +38,7 @@ export default function Aprender() {
           </div>
         </figure>
         <figure
-          className={`flex flex-row items-center mt-12 sm:mt-45 gap-10 text-black tracking-wider`}
+          className={`flex flex-row items-center mt-12 sm:mt-45 gap-10 text-black`}
         >
           <div className="flex flex-2 flex-col gap-4">
             <h2 className="text-3xl font-medium">Documentación</h2>
@@ -48,7 +52,7 @@ export default function Aprender() {
           <div className="flex-1 rounded-3xl shadow-md border"></div>
         </figure>
         <figure
-          className={`flex flex-row items-center mt-12 sm:mt-45 gap-10 text-black tracking-wider`}
+          className={`flex flex-row items-center mt-12 sm:mt-45 gap-10 text-black`}
         >
           <div className="flex-1 rounded-3xl shadow-md border"></div>
           <div className="flex flex-2 flex-col gap-4">
@@ -62,15 +66,15 @@ export default function Aprender() {
           </div>
         </figure>
         <figure
-          className={`flex flex-row items-center mt-12 sm:mt-45 gap-10 text-black tracking-wider`}
+          className={`flex flex-row items-center mt-12 sm:mt-45 gap-10 text-black`}
         >
           <div className="flex flex-2 flex-col gap-4">
             <h2 className="text-3xl font-medium">Constancia</h2>
             <p className="text-2xl">
-              El punto más importante en todo aprendizaje es la constancia.
-              Mantener sesiones de estudio diarias, aunque sean breves, ayuda a
-              mantener una secuencia predecible de acquisión de conocimiento y
-              permite estructurar con mayor facilidad el resto del camino.{" "}
+              El punto más importante en todo aprendizaje. Mantener sesiones de
+              estudio diarias, aunque sean breves, ayuda a mantener una
+              secuencia predecible de adquisición de conocimiento y permite
+              estructurar con mayor facilidad el resto del camino.{" "}
             </p>
           </div>
           <div className="flex-1 rounded-3xl shadow-md border"></div>

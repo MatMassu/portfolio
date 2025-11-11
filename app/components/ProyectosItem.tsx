@@ -18,7 +18,7 @@ export default function ProyectosItem({
       className={`flex flex-row items-center ${bgcolor} mx-10 sm:mx-50 px-5 sm:px-30 py-10 sm:py-30 gap-10 text-black tracking-wider`}
     >
       {" "}
-      <a href={link}>
+      <a href={link} target="_blank">
         <Image
           src={`/${title.replace(/\s+/g, "")}.png`}
           alt={`${title} screenshot`}
