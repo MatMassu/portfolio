@@ -31,8 +31,7 @@ export default function UsoIA() {
             <li className="mt-5">
               <p className="text-xl">Validación de código.</p>
               <p className="text-sm">
-                (corroborar que una sección de código cumple con los principios
-                SOLID)
+                (corroborar que una aplicación cumpla con los principios SOLID)
               </p>
             </li>
             <li className="mt-5">
